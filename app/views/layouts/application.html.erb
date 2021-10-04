@@ -7,9 +7,43 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </head>
 
   <body>
+    <header class="shadow-sm bg h-h">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container header-group">
+          <div class="row-head mx-auto d-flex justify-content-end align-items-center">
+            <a class="navbar-brand mr-auto" href="/"><%= image_tag 'logo.png', :size => '156x60' %></a>
+            <div class="nab">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <%= link_to "Portfolio", root_path, method: :delete, class: 'nav-link text-white' %>
+                  </li>
+                  <li class="nav-item">
+                    <%= link_to 'Feature', root_path, class: 'nav-link text-white' %>
+                  </li>
+                  <li class="nav-item">
+                    <%= link_to 'Profile', root_path, class: 'nav-link text-white' %>
+                  </li>
+                  <li class="nav-item">
+                    <%= link_to 'Constact', root_path, class: 'nav-link text-white' %>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
     <%= yield %>
+    </main>
   </body>
 </html>
