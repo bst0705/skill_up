@@ -24,11 +24,15 @@
 }
 
 .port-box{
-  width:920px;
+  width:90%;
+}
+
+.port-boxs{
+  width:90%;
 }
 
 .port-boxes{
-  width:300px;
+
   height:250px;
   background-size: cover;
   background-position: center;
@@ -46,20 +50,27 @@
 
 .port-boxes:nth-child(3){
   background-image: url(<%= asset_path "write.jpg" %>);
-  margin-right: 0px;
 }
 
-.port-boxes:nth-child(4){
+.port-boxess{
+
+  height:250px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.port-boxess:nth-child(1){
   background-image: url(<%= asset_path "webcamp.png" %>);
 }
 
-.port-boxes:nth-child(5){
+.port-boxess:nth-child(2){
   background-image: url(<%= asset_path "talk.jpg" %>);
 }
 
-.port-boxes:nth-child(6){
+.port-boxess:nth-child(3){
   background-image: url(<%= asset_path "webcamp-mother.png" %>);
-  margin-right: 0px;
 }
 
 .container-Feature{
@@ -72,12 +83,11 @@
 }
 
 .strength-boxes{
-  width:320px;
+  width:30%;
   margin-right:10px;
 }
 
 .strength-boxes:nth-child(3){
-  width:320px;
   margin-right:0px;
 }
 
@@ -98,7 +108,7 @@
 }
 
 .profile-massage-box{
-  width: 512px;
+  width: 90%;
 }
 
 .contact-container{
@@ -126,6 +136,10 @@
   font-size:20px;
 }
 
+.row{
+  margin: 0px;
+}
+
 .sns-item{
   width: 50px;
   height: 50px;
@@ -133,5 +147,16 @@
 }
 .sns-item:nth-child(3){
   margin-right: 0px;
+}
+
+.massage{
+  text-align:left;
+}
+
+
+@media screen and (max-width: 768px){
+.massage {
+    text-align: center;
+}
 }
 

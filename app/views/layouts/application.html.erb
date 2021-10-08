@@ -13,9 +13,10 @@
 
   <body>
     <header class="shadow-sm bg h-h">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container header-group">
-          <div class="row-head mx-auto d-flex justify-content-end align-items-center">
+      <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+        <div class="container header-group justify-content-center">
+          <div class="row n-head">
+            <div class="col-md mx-auto d-flex justify-content-end align-items-center">
             <a class="navbar-brand mr-auto" href="/"><%= image_tag 'logo.png', :size => '156x60' %></a>
             <div class="nab">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,11 +40,12 @@
               </div>
             </div>
           </div>
+          </div>
         </div>
       </nav>
     </header>
 
-    <main>
+    <main >
     <%= yield %>
     </main>
 
